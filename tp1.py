@@ -18,10 +18,10 @@ os.chdir("C:/Users/Wiem/Desktop/TP1_ML")
 D = pandas.read_table("market_basket.txt",delimiter="\t",header=0)
 
 #Affichage des 10 premières lignes
-#print(D.head(10))
+print(D.head(10))
 
 #Affichage des dimension du dataframe
-#print(D.shape)
+print(D.shape)
 
 #Construction de la table binaire
 TC = pandas.crosstab(D.ID,D.Product)
